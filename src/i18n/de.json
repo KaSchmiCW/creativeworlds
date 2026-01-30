@@ -1,0 +1,22 @@
+{
+  "reader": {
+    "title": "RP Lesemodus",
+    "focusMode": "Fokus Modus",
+    "composerMode": "Schreibmodus",
+    "timestamp": {
+      "relative": "her"
+    }
+  },
+  "character": {
+    "age": "Alter",
+    "gender": "Geschlecht",
+    "years": "Jahre"
+  },
+  "gender": {
+    "female": "Weiblich",
+    "male": "Männlich",
+    "non-binary": "Nicht-binär",
+    "other": "Andere",
+    "unspecified": "Nicht spezifiziert"
+  }
+}

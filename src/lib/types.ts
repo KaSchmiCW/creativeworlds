@@ -1,4 +1,4 @@
-import type { Language } from "../i18n/index.js";
+import { dictionaries } from "../i18n/index.js";
 export interface User {
     id: string;
     displayName: string;
@@ -36,10 +36,33 @@ export interface CharacterDetailValue {
     displayedAsTag: boolean;
 }
 
-export type Gender = 
-    | "unspecified"
-    | "female"
-    | "male"
-    | "non-binary"
-    | "other"
-;
+// GENDER section
+export const GENDERS = [
+  "unspecified",
+  "female",
+  "male",
+  "non-binary",
+  "other",
+] as const;
+
+export type Gender = typeof GENDERS[number];
+
+export function parseGender(value: unknown): Gender {
+    if (typeof value === "string" && (GENDERS.includes(value as Gender))) {
+        return value as Gender;
+    }
+
+    return "unspecified";
+}
+
+// LANGUAGE section
+export const LANGUAGES = Object.keys(dictionaries) as readonly string[];
+export type Language = keyof typeof dictionaries;
+
+export function parseLanguage(value: unknown): Language {
+    if (typeof value === "string" && LANGUAGES.includes(value as Language)) {
+        return value as Language;
+    }
+
+    return "en"
+}

@@ -1,14 +1,13 @@
 import en from "./en.json";
 import de from "./de.json";
-import { Gender } from "../lib/types";
+import { Gender, Language } from "../lib/types";
 import { isObject } from "../lib/utils/guards";
+
 
 export const dictionaries = {
   en,
   de,
 };
-
-export type Language = keyof typeof dictionaries;
 
 /** 
  * Translates a key into the specified language using the loaded dictionaries.

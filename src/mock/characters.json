@@ -1,0 +1,48 @@
+[
+  {
+    "id": "1",
+    "name": "Gwyndolin",
+    "description": "A quiet mage with a talent for destructive fire spells.",
+    "portraitUrl": "https://i.postimg.cc/bvV1GvjL/image-2025-01-12-143133234.png",
+    "age": 28,
+    "gender": "female",
+    "details": [
+      {
+        "id": "detail-1",
+        "label": "Origin",
+        "value": "Atmora",
+        "displayedAsTag": true
+      },
+      {
+        "id": "detail-2",
+        "label": "Affiliation",
+        "value": "Cult of Dragons",
+        "displayedAsTag": true
+      },
+      {
+        "id": "detail-3",
+        "label": "Temperament",
+        "value": "Gentle, Kind",
+        "displayedAsTag": false
+      }
+    ],
+    "createdAt": "2023-07-01T12:00:00Z"
+  },
+  {
+    "id": "2",
+    "name": "Elluinor",
+    "description": "A former knight turned wandering sellsword.",
+    "portraitUrl": "https://i.postimg.cc/508QFKvf/image-2026-01-25-105950809.png",
+    "age": 35,
+    "gender": "male",
+    "details": [
+      {
+        "id": "detail-4",
+        "label": "Race",
+        "value": "Bosmer",
+        "displayedAsTag": true
+      }
+    ],
+    "createdAt": "2023-07-03T09:45:00Z"
+  }
+]

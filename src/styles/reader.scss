@@ -1,0 +1,27 @@
+.reader-container {
+  background-color: var(--color-reader-bg);
+  background-image: var(--color-reader-texture);
+  width: 70ch;
+  margin: auto;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+  .post-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+
+    .post-body {
+      p {
+        margin-bottom: 1.2em;
+      }
+    }
+
+    .character-rail {
+      position: sticky;
+      top: 2rem;
+      width: 12rem;
+    }
+  }
+}

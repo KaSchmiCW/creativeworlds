@@ -1,0 +1,45 @@
+:root {
+  /* Backgrounds */
+  --color-app-bg: #0b0d10;
+
+  /* Text */
+  --color-text-primary: #c7cbd1;
+  --color-text-secondary: #9aa0a6;
+
+  /* Reader */
+  --color-reader-bg: #0f1114;
+  --color-reader-texture: url('../../public/black-orchid.png');
+
+  /* Accents */
+  --color-accent: #5b8cff;
+
+  /* Fonts */
+  --font-standard: 'Inter', system-ui, sans-serif;
+  
+
+  [data-theme="light"] {
+    --color-app-bg: #f5f7fa;
+
+    --color-text-primary: #1f2937;
+    --color-text-secondary: #6b7280;
+
+    --color-reader-bg: #ffffff;
+    --color-reader-texture: none;
+
+    --color-accent: #2563eb;
+  }
+}
+
+/*@TODO: Replace section with data-theme approach on app loadup in JS
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+*/
+body {
+  background: var(--color-app-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-standard);
+}
